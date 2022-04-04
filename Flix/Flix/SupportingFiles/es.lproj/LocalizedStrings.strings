@@ -1,0 +1,74 @@
+/* 
+  LocalizedStrings.strings
+  Flix
+
+  Created by Anton Romanov on 14.10.2021.
+  
+*/
+
+// MARK: - Common
+"flix_slogan_title" = "Some nice claim here.";
+"close_title" = "Close";
+"add_title" = "Add";
+"for_title" = "for";
+
+// MARK: - SceneTabs
+"profile_title" = "Profile";
+"movie_title" = "Movie";
+"series_title" = "Series";
+"music_title" = "Music";
+"tv_title" = "TV";
+
+// MARK: - Authorisation
+"sign_in_wallet_title" = "Sign with WalletConnect";
+"sign_in_qr_title" = "Sign with QR Code";
+
+"sign_in_wallet_title" = "Scan the QR code with a Wallet Connect-compatible wallet.";
+
+// MARK: - Profile
+"edit_title" = "Edit";
+"logout_title" = "Log out";
+"save_button_title" = "Save name";
+
+// MARK: - Edit profile
+"edit_profile_title" = "Edit Profile";
+"name_title" = "Name";
+"chnage_wallet_title" = "Change Wallet";
+"subscription_plan_title" = "Subscription plan";
+"change_profile_image_title" = "Change profile image";
+"remove_profile_image_title" = "Remove profile image";
+"edit_name_title" = "Edit your name";
+"available_consumption_time_title" = "Available consumption time";
+"get_more_watching_time_title" = "Get more watching time";
+
+"purchase_consumption_time_reward_note" = "All rewards will be vested over xx day Period . Find out more on our web platform.";
+"flix_reward_title" = "FLIX Reward";
+"pick_additional_item_title" = "Pick  additional watching  hours";
+"available_balance_title" = "Available balance:";
+
+"confirm_purchase_title" = "Confirm Purchase";
+"confirm_aprove_purchase_title" = "Please hit confirm to approve the purchase";
+"approve_purchase_through_wallet_title" = "Approve through Wallet Connect";
+
+"processing_transsaction_title" = "Processing your transaction...";
+"processing_transaction_subtitle" = "Please wait till your transaction is processed over Plygon Chain";
+"purchase_success_alert_title" = "You’ve succesfully bought\n250h of watching time!";
+"purchase_success_alert_subtitle" = "Along with it you’ve received 25 FLIX Coins vexted over xx days. Manage\nthem in Flix  Web App . Enjoy your Flix experience!";
+
+// MARK: - Movie
+"rating_owner_title" = "Privi Rating";
+"rating_value" = "%@/5";
+"staked_title" = "Staked";
+"claimed_title" = "Claimed";
+
+// MARK: - VideoOnDemandItemDetails
+"action_title" = "Action";
+"crime_title" = "Crime";
+"comedy_title" = "Comedy";
+"play_action_title" = "Play";
+"more_episodes_action_title" = "More Episodes";
+"watch_later_action_title" = "Watch later";
+"rate_action_title" = "Rate";
+
+// MARK: - Music
+"pop_title" = "Pop";

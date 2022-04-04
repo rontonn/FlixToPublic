@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="19162" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PlusJakartaDisplay-Bold.otf">
+            <string>PlusJakartaDisplay-Bold</string>
+        </array>
+        <array key="PlusJakartaDisplay-Medium.otf">
+            <string>PlusJakartaDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--MoreEpisodesViewController-->
+        <scene sceneID="9lE-WX-96o">
+            <objects>
+                <viewController storyboardIdentifier="MoreEpisodesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xgj-up-wSf" userLabel="MoreEpisodesViewController" customClass="MoreEpisodesViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aTn-mJ-5lt"/>
+                        <viewControllerLayoutGuide type="bottom" id="BrO-eL-FPV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oo6-ab-TCE">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KA7-61-UDF" userLabel="productionInfoLabel">
+                                <rect key="frame" x="138" y="91" width="0.0" height="0.0"/>
+                                <accessibility key="accessibilityConfiguration" identifier="productionInfoLabelMoreEpisodes" label="productionInfoLabelMoreEpisodes"/>
+                                <fontDescription key="fontDescription" name="PlusJakartaDisplay-Medium" family="Plus Jakarta Display" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKq-LW-dyt" userLabel="titleLabel">
+                                <rect key="frame" x="138" y="104" width="0.0" height="0.0"/>
+                                <accessibility key="accessibilityConfiguration" identifier="titleLabelMoreEpisodes" label="titleLabelMoreEpisodes"/>
+                                <fontDescription key="fontDescription" name="PlusJakartaDisplay-Bold" family="Plus Jakarta Display" pointSize="80"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xev-VP-ztE" userLabel="genresLabel">
+                                <rect key="frame" x="138" y="123" width="0.0" height="0.0"/>
+                                <accessibility key="accessibilityConfiguration" identifier="genresLabelMoreEpisodes" label="genresLabelMoreEpisodes"/>
+                                <fontDescription key="fontDescription" name="PlusJakartaDisplay-Medium" family="Plus Jakarta Display" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KA7-61-UDF" firstAttribute="top" secondItem="Oo6-ab-TCE" secondAttribute="top" constant="91" id="6na-Bf-CwP"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xev-VP-ztE" secondAttribute="trailing" priority="999" constant="10" id="PPk-KP-8Hy"/>
+                            <constraint firstItem="xev-VP-ztE" firstAttribute="leading" secondItem="Oo6-ab-TCE" secondAttribute="leading" constant="138" id="Vp5-Ac-bGs"/>
+                            <constraint firstItem="fKq-LW-dyt" firstAttribute="top" secondItem="KA7-61-UDF" secondAttribute="bottom" constant="13" id="WYE-ch-gx5"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fKq-LW-dyt" secondAttribute="trailing" priority="999" constant="10" id="X9H-bl-D5a"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KA7-61-UDF" secondAttribute="trailing" priority="999" constant="10" id="Z0L-Sa-0Ez"/>
+                            <constraint firstItem="fKq-LW-dyt" firstAttribute="leading" secondItem="Oo6-ab-TCE" secondAttribute="leading" constant="138" id="eJ2-d4-YZe"/>
+                            <constraint firstItem="KA7-61-UDF" firstAttribute="leading" secondItem="Oo6-ab-TCE" secondAttribute="leading" constant="138" id="o9l-vC-1yt"/>
+                            <constraint firstItem="xev-VP-ztE" firstAttribute="top" secondItem="fKq-LW-dyt" secondAttribute="bottom" constant="19" id="prK-67-dfu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="genresLabel" destination="xev-VP-ztE" id="TsC-Uk-5fK"/>
+                        <outlet property="productionInfoLabel" destination="KA7-61-UDF" id="utX-rS-UxE"/>
+                        <outlet property="titleLabel" destination="fKq-LW-dyt" id="7iq-QW-LPD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uX-ET-Cqw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-32" y="-5"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="19455" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xgj-up-wSf">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PlusJakartaDisplay-Bold.otf">
+            <string>PlusJakartaDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--EditConsumptionTimeViewController-->
+        <scene sceneID="9lE-WX-96o">
+            <objects>
+                <viewController storyboardIdentifier="EditConsumptionTimeViewController" title="EditConsumptionTimeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xgj-up-wSf" userLabel="EditConsumptionTimeViewController" customClass="EditConsumptionTimeViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aTn-mJ-5lt"/>
+                        <viewControllerLayoutGuide type="bottom" id="BrO-eL-FPV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oo6-ab-TCE">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syy-Qf-fzn" userLabel="titleLabel">
+                                <rect key="frame" x="960" y="309" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="PlusJakartaDisplay-Bold" family="Plus Jakarta Display" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvm-SZ-vp6" userLabel="availableConsumptionTimeLabel">
+                                <rect key="frame" x="960" y="365" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="PlusJakartaDisplay-Bold" family="Plus Jakarta Display" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QHQ-28-WeM" userLabel="separatorsContainerStackView">
+                                <rect key="frame" x="679.5" y="386" width="561" height="3"/>
+                                <subviews>
+                                    <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CUg-oC-3GS" userLabel="firstSeparatorView">
+                                        <rect key="frame" x="0.0" y="0.0" width="346" height="3"/>
+                                        <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="346" id="Muk-mt-hbB"/>
+                                            <constraint firstAttribute="height" constant="3" id="o2U-W7-YQH"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42h-CF-gj7" userLabel="secondSeparatorView">
+                                        <rect key="frame" x="346" y="1" width="215" height="1"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="dPx-UQ-7NY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="561" id="1TX-8g-IhZ"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjI-Xg-mnx" userLabel="getMoreConsumptionTimeButton">
+                                <rect key="frame" x="751.5" y="453" width="417" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="WMQ-x3-lmn"/>
+                                    <constraint firstAttribute="width" constant="417" id="yhI-3T-XGU"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="didPressGetMoreConsumptionTimeButton:" destination="Xgj-up-wSf" eventType="primaryActionTriggered" id="LaM-mM-YCC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rbh-h3-eDf"/>
+                        <constraints>
+                            <constraint firstItem="nvm-SZ-vp6" firstAttribute="top" secondItem="Syy-Qf-fzn" secondAttribute="bottom" constant="56" id="4Xd-fV-Zk7"/>
+                            <constraint firstItem="AjI-Xg-mnx" firstAttribute="centerX" secondItem="Oo6-ab-TCE" secondAttribute="centerX" id="75a-aJ-gok"/>
+                            <constraint firstItem="nvm-SZ-vp6" firstAttribute="centerX" secondItem="Oo6-ab-TCE" secondAttribute="centerX" id="AN5-Hq-VUf"/>
+                            <constraint firstItem="AjI-Xg-mnx" firstAttribute="top" secondItem="QHQ-28-WeM" secondAttribute="bottom" constant="64" id="HbH-xM-Udg"/>
+                            <constraint firstItem="Syy-Qf-fzn" firstAttribute="centerX" secondItem="Oo6-ab-TCE" secondAttribute="centerX" id="NA1-rz-vig"/>
+                            <constraint firstItem="Syy-Qf-fzn" firstAttribute="top" secondItem="Oo6-ab-TCE" secondAttribute="top" constant="309" id="WTa-ik-ZWq"/>
+                            <constraint firstItem="AjI-Xg-mnx" firstAttribute="top" secondItem="nvm-SZ-vp6" secondAttribute="bottom" constant="88" id="pAs-q9-l21"/>
+                            <constraint firstItem="QHQ-28-WeM" firstAttribute="centerX" secondItem="Oo6-ab-TCE" secondAttribute="centerX" id="x94-ep-dkd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="availableConsumptionTimeLabel" destination="nvm-SZ-vp6" id="n5V-ru-4JE"/>
+                        <outlet property="getMoreConsumptionTimeButton" destination="AjI-Xg-mnx" id="7A7-JD-qYt"/>
+                        <outlet property="titleLabel" destination="Syy-Qf-fzn" id="Z2h-T1-T9i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uX-ET-Cqw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-32" y="-5"/>
+        </scene>
+    </scenes>
+</document>

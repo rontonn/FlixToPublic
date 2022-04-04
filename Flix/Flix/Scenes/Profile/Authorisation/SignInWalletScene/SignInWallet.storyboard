@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="19162" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PlusJakartaDisplay-Medium.otf">
+            <string>PlusJakartaDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--SignInWalletViewController-->
+        <scene sceneID="9lE-WX-96o">
+            <objects>
+                <viewController storyboardIdentifier="SignInWalletViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xgj-up-wSf" userLabel="SignInWalletViewController" customClass="SignInWalletViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aTn-mJ-5lt"/>
+                        <viewControllerLayoutGuide type="bottom" id="BrO-eL-FPV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oo6-ab-TCE">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blurredBackground" translatesAutoresizingMaskIntoConstraints="NO" id="jZH-o2-CpQ" userLabel="blurredBackgroundImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walletConnectLogo" translatesAutoresizingMaskIntoConstraints="NO" id="CK4-WP-kHo" userLabel="walletConnectLogoImageView">
+                                <rect key="frame" x="810.5" y="118" width="299" height="49"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xfh-Qr-ocq" userLabel="qrCodeImageView">
+                                <rect key="frame" x="721" y="194" width="478" height="478"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xfh-Qr-ocq" secondAttribute="height" multiplier="1:1" id="2YY-IT-vnH"/>
+                                    <constraint firstAttribute="width" constant="478" id="FOk-bj-m1H"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUc-q6-HQt" userLabel="labelTitle">
+                                <rect key="frame" x="921.5" y="730" width="77" height="39"/>
+                                <fontDescription key="fontDescription" name="PlusJakartaDisplay-Medium" family="Plus Jakarta Display" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rbh-h3-eDf"/>
+                        <constraints>
+                            <constraint firstItem="CK4-WP-kHo" firstAttribute="centerX" secondItem="Oo6-ab-TCE" secondAttribute="centerX" id="CNa-a7-0Ye"/>
+                            <constraint firstAttribute="bottom" secondItem="jZH-o2-CpQ" secondAttribute="bottom" id="EcD-NT-0Lr"/>
+                            <constraint firstAttribute="trailing" secondItem="jZH-o2-CpQ" secondAttribute="trailing" id="JPO-Lr-WxG"/>
+                            <constraint firstItem="jZH-o2-CpQ" firstAttribute="top" secondItem="Oo6-ab-TCE" secondAttribute="top" id="Tc9-Ox-juj"/>
+                            <constraint firstItem="xfh-Qr-ocq" firstAttribute="top" secondItem="CK4-WP-kHo" secondAttribute="bottom" constant="27" id="ZwQ-G3-gjX"/>
+                            <constraint firstItem="CK4-WP-kHo" firstAttribute="top" secondItem="Oo6-ab-TCE" secondAttribute="top" constant="118" id="dzh-hq-Rfm"/>
+                            <constraint firstItem="xfh-Qr-ocq" firstAttribute="centerX" secondItem="Oo6-ab-TCE" secondAttribute="centerX" id="fgy-CS-wVv"/>
+                            <constraint firstItem="jZH-o2-CpQ" firstAttribute="leading" secondItem="Oo6-ab-TCE" secondAttribute="leading" id="hQh-sW-hvS"/>
+                            <constraint firstItem="BUc-q6-HQt" firstAttribute="centerX" secondItem="Oo6-ab-TCE" secondAttribute="centerX" id="lDY-E5-dtK"/>
+                            <constraint firstItem="BUc-q6-HQt" firstAttribute="top" secondItem="xfh-Qr-ocq" secondAttribute="bottom" constant="58" id="mn6-fE-6w8"/>
+                            <constraint firstItem="BUc-q6-HQt" firstAttribute="centerX" secondItem="Oo6-ab-TCE" secondAttribute="centerX" id="uDn-DV-xYq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelTitle" destination="BUc-q6-HQt" id="NYh-v9-05f"/>
+                        <outlet property="qrCodeImageView" destination="xfh-Qr-ocq" id="JUe-Ej-jxg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uX-ET-Cqw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-32" y="-5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blurredBackground" width="1920" height="1080"/>
+        <image name="walletConnectLogo" width="299" height="49"/>
+    </resources>
+</document>

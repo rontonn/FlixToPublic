@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="19455" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xgj-up-wSf">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PlusJakartaDisplay-Bold.otf">
+            <string>PlusJakartaDisplay-Bold</string>
+        </array>
+        <array key="PlusJakartaDisplay-Medium.otf">
+            <string>PlusJakartaDisplay-Medium</string>
+        </array>
+        <array key="PlusJakartaDisplay-Regular.otf">
+            <string>PlusJakartaDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--VideoOnDemandDetailsViewController-->
+        <scene sceneID="9lE-WX-96o">
+            <objects>
+                <viewController storyboardIdentifier="VideoOnDemandDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xgj-up-wSf" userLabel="VideoOnDemandDetailsViewController" customClass="VideoOnDemandDetailsViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aTn-mJ-5lt"/>
+                        <viewControllerLayoutGuide type="bottom" id="BrO-eL-FPV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oo6-ab-TCE" userLabel="baseViewOfContentDetailViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mq-XR-WLj" userLabel="posterImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="posterImageView" label="posterImageView">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="contentBackgroundGradient" translatesAutoresizingMaskIntoConstraints="NO" id="0lw-7z-qOK" userLabel="backgroundGradientImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="backgroundGradientImageView" label="backgroundGradientImageView">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ieh-Ax-Hbp" userLabel="containerView">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olE-OY-Tbb" userLabel="consumptionTimeLabel">
+                                        <rect key="frame" x="90" y="42" width="0.0" height="0.0"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="consumptionTimeLabel" label="consumptionTimeLabel"/>
+                                        <fontDescription key="fontDescription" name="PlusJakartaDisplay-Regular" family="Plus Jakarta Display" pointSize="27"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yl-rl-8S3" userLabel="consumptionTimeSeparatorView">
+                                        <rect key="frame" x="90" y="58" width="561" height="1"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hgp-P3-623" userLabel="consumptionTImeTopSeparatorView">
+                                                <rect key="frame" x="0.0" y="0.0" width="346" height="1"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="consumptionTImeTopSeparatorView" label="consumptionTImeTopSeparatorView">
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="346" id="ZdY-yn-sU5"/>
+                                                    <constraint firstAttribute="height" constant="1" id="atW-v2-DgN"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGc-0a-Eep" userLabel="consumptionTImeBottomSeparatorView">
+                                                <rect key="frame" x="0.0" y="0.0" width="561" height="1"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="consumptionTImeBottomSeparatorView" label="consumptionTImeBottomSeparatorView">
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="561" id="DyC-wX-lHH"/>
+                                                    <constraint firstAttribute="height" constant="1" id="jnL-YG-K0B"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="consumptionTimeSeparatorView" label="consumptionTimeSeparatorView">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstItem="aGc-0a-Eep" firstAttribute="leading" secondItem="Hgp-P3-623" secondAttribute="leading" id="BJr-bI-vsc"/>
+                                            <constraint firstAttribute="bottom" secondItem="Hgp-P3-623" secondAttribute="bottom" id="ItH-Ft-QTh"/>
+                                            <constraint firstItem="aGc-0a-Eep" firstAttribute="centerY" secondItem="Hgp-P3-623" secondAttribute="centerY" id="Tel-HT-Jss"/>
+                                            <constraint firstAttribute="trailing" secondItem="aGc-0a-Eep" secondAttribute="trailing" id="eq7-oF-h1X"/>
+                                            <constraint firstItem="Hgp-P3-623" firstAttribute="top" secondItem="6yl-rl-8S3" secondAttribute="top" id="lBj-hN-Kp3"/>
+                                            <constraint firstItem="Hgp-P3-623" firstAttribute="leading" secondItem="6yl-rl-8S3" secondAttribute="leading" id="teA-Uj-sTO"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNJ-TK-jTc" userLabel="productionInfoLabel">
+                                        <rect key="frame" x="90" y="368" width="0.0" height="0.0"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="productionInfoLabel" label="productionInfoLabel"/>
+                                        <fontDescription key="fontDescription" name="PlusJakartaDisplay-Medium" family="Plus Jakarta Display" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUt-jc-6sy" userLabel="titleLabel">
+                                        <rect key="frame" x="90" y="381" width="0.0" height="0.0"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="titleLabel" label="titleLabel"/>
+                                        <fontDescription key="fontDescription" name="PlusJakartaDisplay-Bold" family="Plus Jakarta Display" pointSize="80"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0u-De-xhI" userLabel="genresLabel">
+                                        <rect key="frame" x="90" y="400" width="0.0" height="0.0"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="genresLabel" label="genresLabel"/>
+                                        <fontDescription key="fontDescription" name="PlusJakartaDisplay-Medium" family="Plus Jakarta Display" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9P4-km-TtZ" userLabel="ratingView">
+                                        <rect key="frame" x="90" y="427" width="80" height="36"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="imbdIcon" translatesAutoresizingMaskIntoConstraints="NO" id="30E-gr-5cB" userLabel="ratingImageView">
+                                                <rect key="frame" x="0.0" y="0.0" width="71" height="36"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="ratingImageView" label="ratingImageView">
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxH-2N-fEf" userLabel="ratingLabel">
+                                                <rect key="frame" x="80" y="18" width="0.0" height="0.0"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="ratingLabel" label="ratingLabel"/>
+                                                <fontDescription key="fontDescription" name="PlusJakartaDisplay-Medium" family="Plus Jakarta Display" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="ratingView" label="ratingView">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstItem="YxH-2N-fEf" firstAttribute="centerY" secondItem="30E-gr-5cB" secondAttribute="centerY" id="4jD-4U-Hi3"/>
+                                            <constraint firstItem="30E-gr-5cB" firstAttribute="top" secondItem="9P4-km-TtZ" secondAttribute="top" id="Weh-LO-yLW"/>
+                                            <constraint firstItem="YxH-2N-fEf" firstAttribute="leading" secondItem="30E-gr-5cB" secondAttribute="trailing" constant="9" id="dET-mp-pfd"/>
+                                            <constraint firstAttribute="bottom" secondItem="30E-gr-5cB" secondAttribute="bottom" id="lUb-36-LiU"/>
+                                            <constraint firstAttribute="trailing" secondItem="YxH-2N-fEf" secondAttribute="trailing" id="pPm-uZ-sA3"/>
+                                            <constraint firstItem="30E-gr-5cB" firstAttribute="leading" secondItem="9P4-km-TtZ" secondAttribute="leading" id="sFf-rJ-ahH"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fja-3m-uGD" userLabel="descriptionLabel">
+                                        <rect key="frame" x="90" y="512" width="700" height="0.0"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="descriptionLabel" label="descriptionLabel"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" priority="999" constant="700" id="6Xw-Vi-h1A"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PlusJakartaDisplay-Regular" family="Plus Jakarta Display" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="containerView" label="containerView">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstItem="Fja-3m-uGD" firstAttribute="leading" secondItem="Ieh-Ax-Hbp" secondAttribute="leading" constant="90" id="5R5-AL-33l"/>
+                                    <constraint firstItem="6yl-rl-8S3" firstAttribute="leading" secondItem="Ieh-Ax-Hbp" secondAttribute="leading" constant="90" id="8WD-4T-XbL"/>
+                                    <constraint firstItem="Fja-3m-uGD" firstAttribute="top" secondItem="9P4-km-TtZ" secondAttribute="bottom" constant="49" id="8vY-38-8de"/>
+                                    <constraint firstItem="Y0u-De-xhI" firstAttribute="leading" secondItem="Ieh-Ax-Hbp" secondAttribute="leading" constant="90" id="BKa-s8-TLR"/>
+                                    <constraint firstItem="9P4-km-TtZ" firstAttribute="leading" secondItem="Ieh-Ax-Hbp" secondAttribute="leading" constant="90" id="HRv-bv-1yT"/>
+                                    <constraint firstItem="olE-OY-Tbb" firstAttribute="leading" secondItem="Ieh-Ax-Hbp" secondAttribute="leading" constant="90" id="INV-gB-4dl"/>
+                                    <constraint firstItem="CUt-jc-6sy" firstAttribute="top" secondItem="jNJ-TK-jTc" secondAttribute="bottom" constant="13" id="JmY-nl-YNn"/>
+                                    <constraint firstItem="jNJ-TK-jTc" firstAttribute="top" secondItem="Ieh-Ax-Hbp" secondAttribute="top" constant="368" id="QSV-Sr-vrH"/>
+                                    <constraint firstItem="jNJ-TK-jTc" firstAttribute="leading" secondItem="Ieh-Ax-Hbp" secondAttribute="leading" constant="90" id="RdW-Gg-ddQ"/>
+                                    <constraint firstItem="Y0u-De-xhI" firstAttribute="top" secondItem="CUt-jc-6sy" secondAttribute="bottom" constant="19" id="dxr-2C-QsQ"/>
+                                    <constraint firstItem="9P4-km-TtZ" firstAttribute="top" secondItem="Y0u-De-xhI" secondAttribute="bottom" constant="27" id="hhk-As-Yfb"/>
+                                    <constraint firstItem="6yl-rl-8S3" firstAttribute="top" secondItem="olE-OY-Tbb" secondAttribute="bottom" constant="16" id="l5Q-fB-P7y"/>
+                                    <constraint firstItem="CUt-jc-6sy" firstAttribute="leading" secondItem="Ieh-Ax-Hbp" secondAttribute="leading" constant="90" id="oAD-Ch-zGY"/>
+                                    <constraint firstItem="olE-OY-Tbb" firstAttribute="top" secondItem="Ieh-Ax-Hbp" secondAttribute="top" constant="42" id="wqw-8G-8S6"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="flixLogoWhite" translatesAutoresizingMaskIntoConstraints="NO" id="Hoz-af-M5a" userLabel="logoImageView">
+                                <rect key="frame" x="1678" y="30" width="174" height="51"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="logoImageView" label="logoImageView">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wir-2T-FT7"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" identifier="BaseViewOfContentDetailViewController" label="BaseViewOfContentDetailViewController">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="Ieh-Ax-Hbp" firstAttribute="top" secondItem="Oo6-ab-TCE" secondAttribute="top" id="2h2-kO-jk8"/>
+                            <constraint firstItem="5mq-XR-WLj" firstAttribute="leading" secondItem="Oo6-ab-TCE" secondAttribute="leading" id="2sZ-U2-wrc"/>
+                            <constraint firstAttribute="bottom" secondItem="5mq-XR-WLj" secondAttribute="bottom" id="FjZ-yC-seX"/>
+                            <constraint firstAttribute="trailing" secondItem="Hoz-af-M5a" secondAttribute="trailing" constant="68" id="IGj-cZ-sre"/>
+                            <constraint firstItem="Hoz-af-M5a" firstAttribute="top" secondItem="Oo6-ab-TCE" secondAttribute="top" constant="30" id="Ra5-gJ-7ze"/>
+                            <constraint firstItem="Ieh-Ax-Hbp" firstAttribute="leading" secondItem="Oo6-ab-TCE" secondAttribute="leading" id="aOv-lK-zK8"/>
+                            <constraint firstAttribute="trailing" secondItem="5mq-XR-WLj" secondAttribute="trailing" id="azE-4r-ANi"/>
+                            <constraint firstItem="5mq-XR-WLj" firstAttribute="top" secondItem="Oo6-ab-TCE" secondAttribute="top" id="fkI-Vp-DL9"/>
+                            <constraint firstAttribute="bottom" secondItem="Ieh-Ax-Hbp" secondAttribute="bottom" id="kK5-ZH-OFd"/>
+                            <constraint firstAttribute="trailing" secondItem="Ieh-Ax-Hbp" secondAttribute="trailing" id="qBX-93-XBD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="consumptionTimeLabel" destination="olE-OY-Tbb" id="rha-5R-ByO"/>
+                        <outlet property="consumptionTimeSeparatorView" destination="6yl-rl-8S3" id="xIE-fa-kws"/>
+                        <outlet property="containerView" destination="Ieh-Ax-Hbp" id="bfE-CI-cp9"/>
+                        <outlet property="descriptionLabel" destination="Fja-3m-uGD" id="fdd-ck-m1i"/>
+                        <outlet property="genresLabel" destination="Y0u-De-xhI" id="dFJ-ex-Wht"/>
+                        <outlet property="posterImageView" destination="5mq-XR-WLj" id="QF0-4u-JSH"/>
+                        <outlet property="productionInfoLabel" destination="jNJ-TK-jTc" id="nFC-yX-9iO"/>
+                        <outlet property="ratingLabel" destination="YxH-2N-fEf" id="7Gy-iR-0F3"/>
+                        <outlet property="ratingView" destination="9P4-km-TtZ" id="z7p-2C-e5i"/>
+                        <outlet property="titleLabel" destination="CUt-jc-6sy" id="9O6-Ev-cfb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uX-ET-Cqw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-32" y="-5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="contentBackgroundGradient" width="1920" height="1080"/>
+        <image name="flixLogoWhite" width="174" height="51"/>
+        <image name="imbdIcon" width="71" height="36"/>
+    </resources>
+</document>

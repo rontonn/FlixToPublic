@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="19455" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xgj-up-wSf">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeViewController-->
+        <scene sceneID="9lE-WX-96o">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uX-ET-Cqw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xgj-up-wSf" userLabel="HomeViewController" customClass="HomeViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aTn-mJ-5lt"/>
+                        <viewControllerLayoutGuide type="bottom" id="BrO-eL-FPV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oo6-ab-TCE" userLabel="baseViewOfHomeViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="darkBackground" translatesAutoresizingMaskIntoConstraints="NO" id="q8T-UL-cJ2" userLabel="imageViewMainBackgroundView">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flixLogo" translatesAutoresizingMaskIntoConstraints="NO" id="KKc-EB-NsT" userLabel="logoImageView">
+                                <rect key="frame" x="1679" y="31" width="181" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="181" id="Gn2-a9-BhT"/>
+                                    <constraint firstAttribute="height" constant="50" id="M6Y-3t-Z6b"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mei-FZ-A9E" userLabel="sceneContainerView">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="sceneContainerView" label="sceneContainerView">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </view>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8a-0B-Z3y" userLabel="sceneTabsContainerView">
+                                <rect key="frame" x="50" y="227" width="98" height="626"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="sceneTabsContainerView" label="sceneTabsContainerView">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="626" id="JOU-hN-CBb"/>
+                                    <constraint firstAttribute="width" constant="98" id="X1D-zT-O7E"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rbh-h3-eDf"/>
+                        <accessibility key="accessibilityConfiguration" identifier="baseViewOfHomeViewController" label="baseViewOfHomeViewController">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="H8a-0B-Z3y" firstAttribute="leading" secondItem="Oo6-ab-TCE" secondAttribute="leading" constant="50" id="4Lc-Tj-Tiu"/>
+                            <constraint firstAttribute="trailing" secondItem="q8T-UL-cJ2" secondAttribute="trailing" id="4ef-HJ-z2y"/>
+                            <constraint firstItem="q8T-UL-cJ2" firstAttribute="top" secondItem="Oo6-ab-TCE" secondAttribute="top" id="B7V-3c-qL8"/>
+                            <constraint firstAttribute="bottom" secondItem="mei-FZ-A9E" secondAttribute="bottom" id="Hik-NL-rEd"/>
+                            <constraint firstAttribute="bottom" secondItem="q8T-UL-cJ2" secondAttribute="bottom" id="JCw-yN-Dug"/>
+                            <constraint firstItem="KKc-EB-NsT" firstAttribute="top" secondItem="Oo6-ab-TCE" secondAttribute="top" constant="31" id="Uq5-U6-cxZ"/>
+                            <constraint firstAttribute="trailing" secondItem="KKc-EB-NsT" secondAttribute="trailing" constant="60" id="WTc-9S-3zM"/>
+                            <constraint firstItem="mei-FZ-A9E" firstAttribute="leading" secondItem="Oo6-ab-TCE" secondAttribute="leading" id="bnp-us-SqQ"/>
+                            <constraint firstAttribute="trailing" secondItem="mei-FZ-A9E" secondAttribute="trailing" id="fdy-wC-eiN"/>
+                            <constraint firstItem="mei-FZ-A9E" firstAttribute="top" secondItem="Oo6-ab-TCE" secondAttribute="top" id="iaz-Ke-CTA"/>
+                            <constraint firstItem="q8T-UL-cJ2" firstAttribute="leading" secondItem="Oo6-ab-TCE" secondAttribute="leading" id="pZq-q6-K34"/>
+                            <constraint firstItem="H8a-0B-Z3y" firstAttribute="centerY" secondItem="Oo6-ab-TCE" secondAttribute="centerY" id="z5t-lH-23p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sceneContainerView" destination="mei-FZ-A9E" id="CiT-up-7O3"/>
+                        <outlet property="sceneTabsContainerView" destination="H8a-0B-Z3y" id="bVY-v0-r2n"/>
+                        <outlet property="widthOfSceneTabsContainerView" destination="X1D-zT-O7E" id="bPy-Rz-LU2"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-32" y="-4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="darkBackground" width="1920" height="1080"/>
+        <image name="flixLogo" width="682" height="188"/>
+    </resources>
+</document>

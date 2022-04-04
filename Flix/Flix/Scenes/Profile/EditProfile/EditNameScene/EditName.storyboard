@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="19455" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xgj-up-wSf">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PlusJakartaDisplay-Bold.otf">
+            <string>PlusJakartaDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--EditNameViewController-->
+        <scene sceneID="9lE-WX-96o">
+            <objects>
+                <viewController storyboardIdentifier="EditNameViewController" title="EditNameViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xgj-up-wSf" userLabel="EditNameViewController" customClass="EditNameViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aTn-mJ-5lt"/>
+                        <viewControllerLayoutGuide type="bottom" id="BrO-eL-FPV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oo6-ab-TCE">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pte-A7-hOY" userLabel="titleLabel">
+                                <rect key="frame" x="960" y="368" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="PlusJakartaDisplay-Bold" family="Plus Jakarta Display" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Mjo-nW-l3h" userLabel="nameTextField">
+                                <rect key="frame" x="685.5" y="398" width="549" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="Xoo-o5-kOZ"/>
+                                    <constraint firstAttribute="width" constant="549" id="rHA-JQ-NhT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYa-Xr-OOz" userLabel="saveButton">
+                                <rect key="frame" x="794" y="532" width="332" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="332" id="lmn-El-q9t"/>
+                                    <constraint firstAttribute="height" constant="84" id="u3l-e1-XXH"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="Xgj-up-wSf" eventType="primaryActionTriggered" id="jhi-zM-0YN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rbh-h3-eDf"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yYa-Xr-OOz" firstAttribute="top" secondItem="Mjo-nW-l3h" secondAttribute="bottom" constant="50" id="1OA-hW-8yn"/>
+                            <constraint firstItem="yYa-Xr-OOz" firstAttribute="centerX" secondItem="Oo6-ab-TCE" secondAttribute="centerX" id="M4V-6C-9dr"/>
+                            <constraint firstItem="Mjo-nW-l3h" firstAttribute="top" secondItem="pte-A7-hOY" secondAttribute="bottom" constant="30" id="b1Y-C3-vMf"/>
+                            <constraint firstItem="Mjo-nW-l3h" firstAttribute="centerX" secondItem="Oo6-ab-TCE" secondAttribute="centerX" id="ecs-9B-4g0"/>
+                            <constraint firstItem="Mjo-nW-l3h" firstAttribute="centerY" secondItem="Oo6-ab-TCE" secondAttribute="centerY" constant="-100" id="hMY-Ji-acI"/>
+                            <constraint firstItem="pte-A7-hOY" firstAttribute="centerX" secondItem="Oo6-ab-TCE" secondAttribute="centerX" id="zSD-jH-BcD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="Mjo-nW-l3h" id="kVo-gq-I2C"/>
+                        <outlet property="saveButton" destination="yYa-Xr-OOz" id="GNa-Lu-x8K"/>
+                        <outlet property="titleLabel" destination="pte-A7-hOY" id="9dh-hg-XeE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uX-ET-Cqw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-32" y="-5"/>
+        </scene>
+    </scenes>
+</document>

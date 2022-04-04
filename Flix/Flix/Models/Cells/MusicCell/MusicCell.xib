@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="19455" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PlusJakartaDisplay-Bold.otf">
+            <string>PlusJakartaDisplay-Bold</string>
+        </array>
+        <array key="PlusJakartaDisplay-Medium.otf">
+            <string>PlusJakartaDisplay-Medium</string>
+        </array>
+        <array key="PlusJakartaDisplay-Regular.otf">
+            <string>PlusJakartaDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MusicCell" insetsLayoutMarginsFromSafeArea="NO" id="EqZ-a5-Gk2" userLabel="MusicCell" customClass="MusicCell" customModule="Flix" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="553" height="458"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KmW-mW-p8P">
+                <rect key="frame" x="0.0" y="0.0" width="553" height="458"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omo-dG-cNI" userLabel="gradientContainerView">
+                        <rect key="frame" x="0.0" y="0.0" width="553" height="458"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p6J-gN-8fj" userLabel="posterImageView">
+                        <rect key="frame" x="14" y="14" width="525" height="342"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3P-Pa-lt8" userLabel="titleLabel">
+                        <rect key="frame" x="14" y="374" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="PlusJakartaDisplay-Medium" family="Plus Jakarta Display" pointSize="21"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z89-Cx-YAc" userLabel="tagContainerView">
+                        <rect key="frame" x="479" y="361" width="60" height="26"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="asdas d" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INz-pX-vUd" userLabel="tagLabel">
+                                <rect key="frame" x="8" y="5" width="44" height="16"/>
+                                <fontDescription key="fontDescription" name="PlusJakartaDisplay-Bold" family="Plus Jakarta Display" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="INz-pX-vUd" secondAttribute="bottom" constant="5" id="920-wB-rOt"/>
+                            <constraint firstAttribute="trailing" secondItem="INz-pX-vUd" secondAttribute="trailing" constant="8" id="BIB-4k-FUp"/>
+                            <constraint firstItem="INz-pX-vUd" firstAttribute="leading" secondItem="Z89-Cx-YAc" secondAttribute="leading" constant="8" id="bPm-Aw-1K5"/>
+                            <constraint firstItem="INz-pX-vUd" firstAttribute="top" secondItem="Z89-Cx-YAc" secondAttribute="top" constant="5" id="dBQ-eU-nmV"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ei-SU-3Em" userLabel="artistLabel">
+                        <rect key="frame" x="14" y="385" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="PlusJakartaDisplay-Regular" family="Plus Jakarta Display" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZc-y7-eGB" userLabel="albumLabel">
+                        <rect key="frame" x="60" y="385" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="PlusJakartaDisplay-Regular" family="Plus Jakarta Display" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="3ei-SU-3Em" firstAttribute="leading" secondItem="KmW-mW-p8P" secondAttribute="leading" constant="14" id="1S2-Zc-LvN"/>
+                    <constraint firstItem="omo-dG-cNI" firstAttribute="top" secondItem="KmW-mW-p8P" secondAttribute="top" id="52L-zh-fLE"/>
+                    <constraint firstItem="3ei-SU-3Em" firstAttribute="top" secondItem="D3P-Pa-lt8" secondAttribute="bottom" constant="11" id="7X3-bD-mTj"/>
+                    <constraint firstAttribute="trailing" secondItem="p6J-gN-8fj" secondAttribute="trailing" constant="14" id="CZx-Z5-TIX"/>
+                    <constraint firstItem="Z89-Cx-YAc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="D3P-Pa-lt8" secondAttribute="trailing" priority="999" constant="10" id="CxR-Zg-WDr"/>
+                    <constraint firstItem="bZc-y7-eGB" firstAttribute="centerY" secondItem="3ei-SU-3Em" secondAttribute="centerY" id="KrJ-Ad-BUg"/>
+                    <constraint firstItem="p6J-gN-8fj" firstAttribute="top" secondItem="KmW-mW-p8P" secondAttribute="top" constant="14" id="LAp-Bo-vn7"/>
+                    <constraint firstItem="D3P-Pa-lt8" firstAttribute="leading" secondItem="KmW-mW-p8P" secondAttribute="leading" constant="14" id="ThL-XH-PB9"/>
+                    <constraint firstItem="p6J-gN-8fj" firstAttribute="leading" secondItem="KmW-mW-p8P" secondAttribute="leading" constant="14" id="axr-jK-gyE"/>
+                    <constraint firstAttribute="trailing" secondItem="omo-dG-cNI" secondAttribute="trailing" id="bb5-01-7uw"/>
+                    <constraint firstItem="bZc-y7-eGB" firstAttribute="leading" secondItem="3ei-SU-3Em" secondAttribute="trailing" constant="46" id="bi8-TO-Wy2"/>
+                    <constraint firstItem="D3P-Pa-lt8" firstAttribute="top" secondItem="p6J-gN-8fj" secondAttribute="bottom" constant="18" id="e10-9m-MCo"/>
+                    <constraint firstItem="Z89-Cx-YAc" firstAttribute="centerY" secondItem="D3P-Pa-lt8" secondAttribute="centerY" id="f81-8Z-Y2p"/>
+                    <constraint firstAttribute="bottom" secondItem="omo-dG-cNI" secondAttribute="bottom" id="fpg-Wr-bqW"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bZc-y7-eGB" secondAttribute="trailing" priority="999" constant="14" id="jc4-3m-xh9"/>
+                    <constraint firstAttribute="trailing" secondItem="Z89-Cx-YAc" secondAttribute="trailing" constant="14" id="ljf-K7-p5Q"/>
+                    <constraint firstAttribute="bottom" secondItem="p6J-gN-8fj" secondAttribute="bottom" constant="102" id="n3F-SE-wTY"/>
+                    <constraint firstItem="omo-dG-cNI" firstAttribute="leading" secondItem="KmW-mW-p8P" secondAttribute="leading" id="vTh-MC-D48"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="553" height="458"/>
+            <connections>
+                <outlet property="albumLabel" destination="bZc-y7-eGB" id="3bf-vL-FX0"/>
+                <outlet property="artistLabel" destination="3ei-SU-3Em" id="Tn7-Wc-2S5"/>
+                <outlet property="gradientContainerView" destination="omo-dG-cNI" id="WHK-J2-dCx"/>
+                <outlet property="posterImageView" destination="p6J-gN-8fj" id="TMd-ov-usE"/>
+                <outlet property="tagContainerView" destination="Z89-Cx-YAc" id="4nd-Sj-BXd"/>
+                <outlet property="tagLabel" destination="INz-pX-vUd" id="HqR-TH-hTH"/>
+                <outlet property="titleLabel" destination="D3P-Pa-lt8" id="pVC-tN-p4l"/>
+            </connections>
+            <point key="canvasLocation" x="82.5" y="-53"/>
+        </collectionViewCell>
+    </objects>
+</document>

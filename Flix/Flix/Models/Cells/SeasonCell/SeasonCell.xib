@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="19162" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PlusJakartaDisplay-Medium.otf">
+            <string>PlusJakartaDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="SeasonCell" insetsLayoutMarginsFromSafeArea="NO" id="Q75-ha-dFw" userLabel="SeasonCell" customClass="SeasonCell" customModule="Flix" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="553" height="458"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="P49-Hs-gJv">
+                <rect key="frame" x="0.0" y="0.0" width="553" height="458"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Vr-Ky-g32" userLabel="labelsStackView">
+                        <rect key="frame" x="32" y="175" width="489" height="108"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XL0-Hm-598" userLabel="titleLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="489" height="50"/>
+                                <accessibility key="accessibilityConfiguration" identifier="titleLabelSeasonCell" label="titleLabelSeasonCell"/>
+                                <fontDescription key="fontDescription" name="PlusJakartaDisplay-Medium" family="Plus Jakarta Display" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJj-ZZ-Orl" userLabel="subtitleLabel">
+                                <rect key="frame" x="0.0" y="58" width="489" height="50"/>
+                                <accessibility key="accessibilityConfiguration" identifier="subtitleLabelSeasonCell" label="subtitleLabelSeasonCell"/>
+                                <fontDescription key="fontDescription" name="PlusJakartaDisplay-Medium" family="Plus Jakarta Display" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </stackView>
+                </subviews>
+                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7Vr-Ky-g32" secondAttribute="trailing" constant="32" id="9rS-E3-Oya"/>
+                    <constraint firstItem="7Vr-Ky-g32" firstAttribute="leading" secondItem="P49-Hs-gJv" secondAttribute="leading" constant="32" id="OV8-li-483"/>
+                    <constraint firstItem="7Vr-Ky-g32" firstAttribute="centerY" secondItem="P49-Hs-gJv" secondAttribute="centerY" id="a19-Wb-gXe"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="553" height="458"/>
+            <connections>
+                <outlet property="subtitleLabel" destination="CJj-ZZ-Orl" id="hSf-ho-bIA"/>
+                <outlet property="titleLabel" destination="XL0-Hm-598" id="2aF-pp-XPl"/>
+            </connections>
+            <point key="canvasLocation" x="82.5" y="-53"/>
+        </collectionViewCell>
+    </objects>
+</document>

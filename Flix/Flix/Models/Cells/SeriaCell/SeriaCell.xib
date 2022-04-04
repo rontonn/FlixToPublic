@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="19455" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PlusJakartaDisplay-Medium.otf">
+            <string>PlusJakartaDisplay-Medium</string>
+        </array>
+        <array key="PlusJakartaDisplay-Regular.otf">
+            <string>PlusJakartaDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="SeriaCell" insetsLayoutMarginsFromSafeArea="NO" id="YgV-Fu-Erm" userLabel="SeriaCell" customClass="SeriaCell" customModule="Flix" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="635" height="583"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ej2-OA-OuW">
+                <rect key="frame" x="0.0" y="0.0" width="635" height="583"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4mq-jF-dfk" userLabel="posterImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="635" height="355.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="4mq-jF-dfk" secondAttribute="height" multiplier="457:256" id="ICe-7e-8Gy"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zua-uE-51u" userLabel="progressView">
+                        <rect key="frame" x="0.0" y="399.5" width="635" height="10"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="xH5-g2-iRr"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Fv-lB-Ju1" userLabel="durationLabel">
+                        <rect key="frame" x="635" y="431.5" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="PlusJakartaDisplay-Medium" family="Plus Jakarta Display" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzn-e7-MhN" userLabel="seriaNumberLabel">
+                        <rect key="frame" x="0.0" y="431.5" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="PlusJakartaDisplay-Regular" family="Plus Jakarta Display" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xB2-zm-YBQ" userLabel="titleLabel">
+                        <rect key="frame" x="0.0" y="436.5" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="PlusJakartaDisplay-Medium" family="Plus Jakarta Display" pointSize="21"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAa-Ko-tRK" userLabel="descriptionLabel">
+                        <rect key="frame" x="0.0" y="446.5" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="PlusJakartaDisplay-Regular" family="Plus Jakarta Display" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Zua-uE-51u" secondAttribute="trailing" id="9xY-DF-ob7"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xB2-zm-YBQ" secondAttribute="trailing" constant="10" id="B9Q-UU-PZF"/>
+                    <constraint firstAttribute="trailing" secondItem="8Fv-lB-Ju1" secondAttribute="trailing" id="BMc-On-GYo"/>
+                    <constraint firstItem="xzn-e7-MhN" firstAttribute="top" secondItem="Zua-uE-51u" secondAttribute="bottom" constant="22" id="Bve-eF-osO"/>
+                    <constraint firstItem="pAa-Ko-tRK" firstAttribute="top" secondItem="xB2-zm-YBQ" secondAttribute="bottom" constant="10" id="Smu-0t-kle"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="pAa-Ko-tRK" secondAttribute="bottom" constant="10" id="UfI-rx-fM4"/>
+                    <constraint firstItem="xB2-zm-YBQ" firstAttribute="leading" secondItem="Ej2-OA-OuW" secondAttribute="leading" id="V11-fN-8mm"/>
+                    <constraint firstItem="pAa-Ko-tRK" firstAttribute="leading" secondItem="Ej2-OA-OuW" secondAttribute="leading" id="VwM-uc-Ht8"/>
+                    <constraint firstItem="xzn-e7-MhN" firstAttribute="leading" secondItem="Ej2-OA-OuW" secondAttribute="leading" id="YUI-ra-NVl"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pAa-Ko-tRK" secondAttribute="trailing" priority="999" constant="10" id="Zem-em-EIN"/>
+                    <constraint firstItem="4mq-jF-dfk" firstAttribute="top" secondItem="Ej2-OA-OuW" secondAttribute="top" id="cTk-Fs-khw"/>
+                    <constraint firstItem="xB2-zm-YBQ" firstAttribute="top" secondItem="xzn-e7-MhN" secondAttribute="bottom" constant="5" id="caU-a5-rZK"/>
+                    <constraint firstItem="Zua-uE-51u" firstAttribute="top" secondItem="4mq-jF-dfk" secondAttribute="bottom" constant="44" id="edz-kd-azn"/>
+                    <constraint firstAttribute="trailing" secondItem="4mq-jF-dfk" secondAttribute="trailing" id="ehV-9v-Iwi"/>
+                    <constraint firstItem="8Fv-lB-Ju1" firstAttribute="top" secondItem="Zua-uE-51u" secondAttribute="bottom" constant="22" id="iQO-pE-gEv"/>
+                    <constraint firstAttribute="trailing" secondItem="8Fv-lB-Ju1" secondAttribute="trailing" id="jG4-pu-UBJ"/>
+                    <constraint firstItem="8Fv-lB-Ju1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xzn-e7-MhN" secondAttribute="trailing" priority="999" constant="10" id="thO-gk-znv"/>
+                    <constraint firstItem="Zua-uE-51u" firstAttribute="leading" secondItem="Ej2-OA-OuW" secondAttribute="leading" id="tp7-6s-cVV"/>
+                    <constraint firstItem="4mq-jF-dfk" firstAttribute="leading" secondItem="Ej2-OA-OuW" secondAttribute="leading" id="uRC-7L-h2b"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="635" height="583"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="pAa-Ko-tRK" id="0ij-j7-smT"/>
+                <outlet property="durationLabel" destination="8Fv-lB-Ju1" id="XIM-Iq-M54"/>
+                <outlet property="posterImageView" destination="4mq-jF-dfk" id="jQi-7D-KMK"/>
+                <outlet property="progressView" destination="Zua-uE-51u" id="ySG-o9-86F"/>
+                <outlet property="seriaNumberLabel" destination="xzn-e7-MhN" id="Mer-y5-LRo"/>
+                <outlet property="titleLabel" destination="xB2-zm-YBQ" id="M8h-uq-C97"/>
+            </connections>
+            <point key="canvasLocation" x="123.5" y="9.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

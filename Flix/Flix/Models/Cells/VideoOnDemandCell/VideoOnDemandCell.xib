@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="19455" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PlusJakartaDisplay-Bold.otf">
+            <string>PlusJakartaDisplay-Bold</string>
+        </array>
+        <array key="PlusJakartaDisplay-Regular.otf">
+            <string>PlusJakartaDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="VideoOnDemandCell" insetsLayoutMarginsFromSafeArea="NO" id="11k-L6-Ivw" userLabel="VideoOnDemandCell" customClass="VideoOnDemandCell" customModule="Flix" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="553" height="458"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UpA-E0-uPT">
+                <rect key="frame" x="0.0" y="0.0" width="553" height="458"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jko-PE-AbY" userLabel="posterImageView">
+                        <rect key="frame" x="14" y="14" width="525" height="327"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYI-Kr-T0z" userLabel="titleLabel">
+                        <rect key="frame" x="14" y="359" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="PlusJakartaDisplay-Regular" family="Plus Jakarta Display" pointSize="21"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdd-kR-dLD" userLabel="ratingOwnerLabel">
+                        <rect key="frame" x="14" y="378" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="PlusJakartaDisplay-Regular" family="Plus Jakarta Display" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSF-jC-4Vf" userLabel="tagContainerView">
+                        <rect key="frame" x="523" y="354" width="16" height="10"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWV-LS-Dl3" userLabel="tagLabel">
+                                <rect key="frame" x="8" y="5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="PlusJakartaDisplay-Bold" family="Plus Jakarta Display" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HWV-LS-Dl3" firstAttribute="top" secondItem="pSF-jC-4Vf" secondAttribute="top" constant="5" id="b4I-4N-z49"/>
+                            <constraint firstAttribute="trailing" secondItem="HWV-LS-Dl3" secondAttribute="trailing" constant="8" id="egF-38-Tv7"/>
+                            <constraint firstItem="HWV-LS-Dl3" firstAttribute="leading" secondItem="pSF-jC-4Vf" secondAttribute="leading" constant="8" id="lUK-xs-ADg"/>
+                            <constraint firstAttribute="bottom" secondItem="HWV-LS-Dl3" secondAttribute="bottom" constant="5" id="oNl-3y-Wge"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A6e-uM-IjP" userLabel="ratingStarsStackView">
+                        <rect key="frame" x="420" y="367.5" width="105" height="21"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="emptyRateStar" translatesAutoresizingMaskIntoConstraints="NO" id="Fb0-pO-iLz" userLabel="firstStarImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="21" height="21"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="emptyRateStar" translatesAutoresizingMaskIntoConstraints="NO" id="UuJ-7H-i72" userLabel="secondStarImageView">
+                                <rect key="frame" x="21" y="0.0" width="21" height="21"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="emptyRateStar" translatesAutoresizingMaskIntoConstraints="NO" id="nxf-g6-qzz" userLabel="thirdStarImageView">
+                                <rect key="frame" x="42" y="0.0" width="21" height="21"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="emptyRateStar" translatesAutoresizingMaskIntoConstraints="NO" id="vt4-w2-kHe" userLabel="fourthStarImageView">
+                                <rect key="frame" x="63" y="0.0" width="21" height="21"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="emptyRateStar" translatesAutoresizingMaskIntoConstraints="NO" id="ubg-bE-7KD" userLabel="fifthStarImageView">
+                                <rect key="frame" x="84" y="0.0" width="21" height="21"/>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qER-N9-Izp" userLabel="ratingValueLabel">
+                        <rect key="frame" x="539" y="378" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="PlusJakartaDisplay-Bold" family="Plus Jakarta Display" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="A6e-uM-IjP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Xdd-kR-dLD" secondAttribute="trailing" priority="999" constant="10" id="2gv-83-TPP"/>
+                    <constraint firstItem="qER-N9-Izp" firstAttribute="leading" secondItem="A6e-uM-IjP" secondAttribute="trailing" constant="14" id="3eg-DX-cMc"/>
+                    <constraint firstItem="Xdd-kR-dLD" firstAttribute="top" secondItem="MYI-Kr-T0z" secondAttribute="bottom" constant="19" id="71Z-nn-kKS"/>
+                    <constraint firstItem="Jko-PE-AbY" firstAttribute="leading" secondItem="UpA-E0-uPT" secondAttribute="leading" constant="14" id="8Bq-f9-UfP"/>
+                    <constraint firstItem="pSF-jC-4Vf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MYI-Kr-T0z" secondAttribute="trailing" priority="999" constant="10" id="CSO-sF-zvG"/>
+                    <constraint firstItem="A6e-uM-IjP" firstAttribute="centerY" secondItem="qER-N9-Izp" secondAttribute="centerY" id="MVp-Ge-Sna"/>
+                    <constraint firstItem="MYI-Kr-T0z" firstAttribute="leading" secondItem="UpA-E0-uPT" secondAttribute="leading" constant="14" id="VZi-ax-T3e"/>
+                    <constraint firstAttribute="trailing" secondItem="pSF-jC-4Vf" secondAttribute="trailing" constant="14" id="VuQ-KI-NkB"/>
+                    <constraint firstItem="Xdd-kR-dLD" firstAttribute="leading" secondItem="UpA-E0-uPT" secondAttribute="leading" constant="14" id="Zly-zZ-hpn"/>
+                    <constraint firstItem="Xdd-kR-dLD" firstAttribute="centerY" secondItem="A6e-uM-IjP" secondAttribute="centerY" id="f9B-Vm-S9P"/>
+                    <constraint firstAttribute="trailing" secondItem="Jko-PE-AbY" secondAttribute="trailing" constant="14" id="hbt-zx-P1X"/>
+                    <constraint firstAttribute="bottom" secondItem="Jko-PE-AbY" secondAttribute="bottom" constant="117" id="mOo-GS-Ugy"/>
+                    <constraint firstAttribute="trailing" secondItem="qER-N9-Izp" secondAttribute="trailing" constant="14" id="qGn-17-4H9"/>
+                    <constraint firstItem="Jko-PE-AbY" firstAttribute="top" secondItem="UpA-E0-uPT" secondAttribute="top" constant="14" id="sYl-4W-bFv"/>
+                    <constraint firstItem="MYI-Kr-T0z" firstAttribute="top" secondItem="Jko-PE-AbY" secondAttribute="bottom" constant="18" id="t4r-ho-NUQ"/>
+                    <constraint firstItem="pSF-jC-4Vf" firstAttribute="centerY" secondItem="MYI-Kr-T0z" secondAttribute="centerY" id="yW6-zu-FIg"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="553" height="458"/>
+            <connections>
+                <outlet property="fifthStarImageView" destination="ubg-bE-7KD" id="RuM-eP-0HB"/>
+                <outlet property="firstStarImageView" destination="Fb0-pO-iLz" id="zbb-7P-qvi"/>
+                <outlet property="fourthtarImageView" destination="vt4-w2-kHe" id="sGN-r1-bHP"/>
+                <outlet property="posterImageView" destination="Jko-PE-AbY" id="GCH-gp-VpM"/>
+                <outlet property="ratingOwnerLabel" destination="Xdd-kR-dLD" id="OT9-EF-Z1h"/>
+                <outlet property="ratingValueLabel" destination="qER-N9-Izp" id="9oM-pY-Qd0"/>
+                <outlet property="secondStarImageView" destination="UuJ-7H-i72" id="421-Z1-Z9c"/>
+                <outlet property="tagContainerView" destination="pSF-jC-4Vf" id="0gM-pm-5sB"/>
+                <outlet property="tagLabel" destination="HWV-LS-Dl3" id="Sl1-uU-GHX"/>
+                <outlet property="thirdStarImageView" destination="nxf-g6-qzz" id="TcN-Sk-U6H"/>
+                <outlet property="titleLabel" destination="MYI-Kr-T0z" id="30M-P8-qQM"/>
+            </connections>
+            <point key="canvasLocation" x="82.5" y="-53"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="emptyRateStar" width="21" height="21"/>
+    </resources>
+</document>

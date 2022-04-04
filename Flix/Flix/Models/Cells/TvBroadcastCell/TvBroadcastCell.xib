@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="19455" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PlusJakartaDisplay-Bold.otf">
+            <string>PlusJakartaDisplay-Bold</string>
+        </array>
+        <array key="PlusJakartaDisplay-Regular.otf">
+            <string>PlusJakartaDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="TvBroadcastCell" insetsLayoutMarginsFromSafeArea="NO" id="r50-rA-2GN" userLabel="TvBroadcastCell" customClass="TvBroadcastCell" customModule="Flix" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="553" height="458"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QAZ-Is-bb9">
+                <rect key="frame" x="0.0" y="0.0" width="553" height="458"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jxY-Sj-gDz" userLabel="posterImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="553" height="305"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rgc-hP-MP5" userLabel="tagImageView">
+                        <rect key="frame" x="16" y="16" width="95" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="95" id="6Tj-D5-DVr"/>
+                            <constraint firstAttribute="height" constant="24" id="7ex-G7-rlm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNE-3q-IyP" userLabel="titleLabel">
+                        <rect key="frame" x="0.0" y="335" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="PlusJakartaDisplay-Bold" family="Plus Jakarta Display" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="751" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="629-T8-Acz" userLabel="subtitleLabel">
+                        <rect key="frame" x="0.0" y="340" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="PlusJakartaDisplay-Regular" family="Plus Jakarta Display" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="751" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmq-IU-xhl" userLabel="descriptionLabel">
+                        <rect key="frame" x="0.0" y="352" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="PlusJakartaDisplay-Regular" family="Plus Jakarta Display" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TNE-3q-IyP" secondAttribute="trailing" priority="999" constant="5" id="4VJ-Ve-Oel"/>
+                    <constraint firstItem="Gmq-IU-xhl" firstAttribute="leading" secondItem="QAZ-Is-bb9" secondAttribute="leading" id="BqK-su-oXj"/>
+                    <constraint firstItem="TNE-3q-IyP" firstAttribute="leading" secondItem="QAZ-Is-bb9" secondAttribute="leading" id="RcX-I3-5DU"/>
+                    <constraint firstItem="Gmq-IU-xhl" firstAttribute="top" secondItem="629-T8-Acz" secondAttribute="bottom" constant="12" id="Rhg-un-ZHM"/>
+                    <constraint firstAttribute="bottom" secondItem="jxY-Sj-gDz" secondAttribute="bottom" constant="153" id="VBx-yP-nKF"/>
+                    <constraint firstItem="jxY-Sj-gDz" firstAttribute="top" secondItem="QAZ-Is-bb9" secondAttribute="top" id="ZUr-Vv-Tek"/>
+                    <constraint firstItem="jxY-Sj-gDz" firstAttribute="leading" secondItem="QAZ-Is-bb9" secondAttribute="leading" id="b25-y6-TqO"/>
+                    <constraint firstItem="TNE-3q-IyP" firstAttribute="top" secondItem="jxY-Sj-gDz" secondAttribute="bottom" constant="30" id="g5H-7e-ndx"/>
+                    <constraint firstAttribute="trailing" secondItem="jxY-Sj-gDz" secondAttribute="trailing" id="h0i-I9-ktu"/>
+                    <constraint firstItem="629-T8-Acz" firstAttribute="leading" secondItem="QAZ-Is-bb9" secondAttribute="leading" id="iHG-H8-yKk"/>
+                    <constraint firstItem="629-T8-Acz" firstAttribute="top" secondItem="TNE-3q-IyP" secondAttribute="bottom" constant="5" id="lgP-YS-E2S"/>
+                    <constraint firstItem="Rgc-hP-MP5" firstAttribute="leading" secondItem="QAZ-Is-bb9" secondAttribute="leading" constant="16" id="otw-gH-Rdd"/>
+                    <constraint firstItem="Rgc-hP-MP5" firstAttribute="top" secondItem="QAZ-Is-bb9" secondAttribute="top" constant="16" id="p9B-LI-a9g"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Gmq-IU-xhl" secondAttribute="trailing" priority="999" constant="5" id="sJD-Di-Yh3"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Gmq-IU-xhl" secondAttribute="bottom" constant="5" id="zeF-7u-rUe"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="553" height="458"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="Gmq-IU-xhl" id="e26-5I-WHR"/>
+                <outlet property="posterImageView" destination="jxY-Sj-gDz" id="dZa-jE-3s8"/>
+                <outlet property="subtitleLabel" destination="629-T8-Acz" id="lno-QN-au2"/>
+                <outlet property="tagImageView" destination="Rgc-hP-MP5" id="hWw-0d-MSZ"/>
+                <outlet property="titleLabel" destination="TNE-3q-IyP" id="etj-vd-FLj"/>
+            </connections>
+            <point key="canvasLocation" x="82.5" y="-53"/>
+        </collectionViewCell>
+    </objects>
+</document>

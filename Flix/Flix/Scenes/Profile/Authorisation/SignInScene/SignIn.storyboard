@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="19455" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QlO-3M-tTc">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PlusJakartaDisplay-Light.otf">
+            <string>PlusJakartaDisplay-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--SignInViewController-->
+        <scene sceneID="7Aw-kB-j8e">
+            <objects>
+                <viewController storyboardIdentifier="SignInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QlO-3M-tTc" userLabel="SignInViewController" customClass="SignInViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1l4-5P-1bw"/>
+                        <viewControllerLayoutGuide type="bottom" id="ts7-1U-J76"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LGD-a1-6Dm">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signInBackground" translatesAutoresizingMaskIntoConstraints="NO" id="cb0-NX-YL5" userLabel="loginBackgroundImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3dLogo" translatesAutoresizingMaskIntoConstraints="NO" id="cfJ-Ho-Cd4" userLabel="flixLogoImageView">
+                                <rect key="frame" x="617" y="231" width="686" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="686" id="74y-1r-Irc"/>
+                                    <constraint firstAttribute="height" constant="236" id="Dcx-NX-ghR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Way-C2-ai8" userLabel="titleLabel">
+                                <rect key="frame" x="690" y="456" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="PlusJakartaDisplay-Light" family="Plus Jakarta Display" pointSize="53"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yxk-Cd-iPW"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="cb0-NX-YL5" secondAttribute="bottom" id="18e-oU-Hb8"/>
+                            <constraint firstItem="cb0-NX-YL5" firstAttribute="leading" secondItem="LGD-a1-6Dm" secondAttribute="leading" id="AxI-mp-umH"/>
+                            <constraint firstItem="Way-C2-ai8" firstAttribute="leading" secondItem="cfJ-Ho-Cd4" secondAttribute="leading" constant="73" id="DlC-fV-NBb"/>
+                            <constraint firstItem="Way-C2-ai8" firstAttribute="top" secondItem="cfJ-Ho-Cd4" secondAttribute="top" constant="225" id="PT2-di-oTM"/>
+                            <constraint firstAttribute="trailing" secondItem="cb0-NX-YL5" secondAttribute="trailing" id="TtX-0T-MKu"/>
+                            <constraint firstItem="cfJ-Ho-Cd4" firstAttribute="centerX" secondItem="LGD-a1-6Dm" secondAttribute="centerX" id="ZxB-4V-TuS"/>
+                            <constraint firstItem="cb0-NX-YL5" firstAttribute="top" secondItem="LGD-a1-6Dm" secondAttribute="top" id="nYD-g7-sdy"/>
+                            <constraint firstItem="cfJ-Ho-Cd4" firstAttribute="top" secondItem="LGD-a1-6Dm" secondAttribute="top" constant="231" id="w0h-DJ-oUz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="Way-C2-ai8" id="iy3-Fb-4AV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lXB-A0-VjW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-93" y="1956"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="3dLogo" width="734" height="271"/>
+        <image name="signInBackground" width="1920" height="1080"/>
+    </resources>
+</document>
