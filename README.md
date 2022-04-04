@@ -12,6 +12,7 @@ ___________________________
 As you can see from my GitHub I’ve never posted here any commercial code and I’m really disappointed that I have to do it now.
 On this project, I was working for 5 months, from October 2021 to the 21st of February.
 I’ve been paid for my job during the first 3 months. For January and February, I didn’t get the payment.
+
 Julian Voll is one of the CEOs of Privi Chain Inc. I’ve spent 2 months discussing with him this problem and was been receiving false promises. 
 
 Julian broke the agreement and NDA because he didn’t pay me for the job I’ve done. 
